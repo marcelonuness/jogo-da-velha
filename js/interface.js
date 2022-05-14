@@ -47,11 +47,12 @@ function updateSquare(position) {
 let restart = document.getElementById("restart")
 
 restart.addEventListener("click", ()=>{
-    
     let container2 = document.querySelector("#container2")
     let container = document.querySelector("#container")
 
     container2.style.display = "none"
     container.style.display = "flex"
-    
+
+    gameOver = false
+    playerTime = 0
 })
