@@ -1,7 +1,29 @@
 body {
+    width: 100%;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Outfit', sans-serif;
     text-align: center;
+    background-color: rgba(127, 255, 212, 0.562);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+#container {
+
+    margin: 100px auto;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
 
 .square {
     width: 100px;
@@ -40,3 +62,36 @@ body {
     bottom: 0;
     right: 0;
 }
+
+
+/*msg de vitoria*/
+
+
+#container2 {
+    margin: 150px auto;
+    width: 400px;
+    height: 400px;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.msg-vitoria {
+    color: purple;
+    text-transform: uppercase;
+}
+
+#restart {
+    margin-top: 20px;
+    width: 75%;
+    height: 50px;
+    background-color: crimson;
+}
+
+#restart:hover {
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+
