@@ -47,12 +47,21 @@ function updateSquare(position) {
 let restart = document.getElementById("restart")
 
 restart.addEventListener("click", ()=>{
-    let container2 = document.querySelector("#container2")
-    let container = document.querySelector("#container")
+        
+        let container = document.querySelector("#container")
+        let container2 = document.querySelector("#container2")        
 
-    container2.style.display = "none"
-    container.style.display = "flex"
-
-    gameOver = false
-    playerTime = 0
-})
+        container.style.display = "flex"
+        container2.style.display = "none"
+        
+        let squares = document.querySelectorAll(".square")
+        squares.forEach((square) => {
+            square.innerHTML = ``
+        })
+        handleMove()
+        board = ['', '', '', '', '', '', '', '', '']
+        isWin()
+        gameOver = false
+        playerTime = 0
+    })
+    
